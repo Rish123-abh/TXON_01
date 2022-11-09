@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline: none; border:none;
+    text-decoration: none; 
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    border:.2rem solid green;
+    color:var(--black);
+    cursor: pointer;
+    background: whitesmoke;
+}
+.btn:hover{
+    background-color: rgb(241, 222, 222);
+}
+
+.header{
+
+    top:0;left:0;right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    background-color: rgb(228, 238, 194);
+    padding:20px 9px;
+
+}
+.header a{
+    margin: 2px 4px;
+    padding: 2px 4px;
+    font-size: 23px;
+    color: black;
+    text-align: center;
+}
+.header a .logo{
+    font-size: 50px;
+    font-weight: bolder;
+    color: black;
+}
+.header a img{
+    height:100px;
+    width: 100px;
+    border: 2px solid green;
+}
+
+.header .navbar a{
+    font-size: 25px;
+    font-weight: bolder;
+    margin:4px 6px;
+    padding:4px 6px;
+}
+.header .navbar a:hover{
+    background-color: rgb(198, 231, 145);
+    border-radius: 20px;
+}
+.header .icon div{
+    height:2.5em;
+    width:2.5em;
+    line-height: 2.5em;
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 10px;
+    margin-right:10px;
+    padding: 2px 2px;
+    text-align: center;
+}
+.header .icon div:hover{
+
+    background-color: rgb(233, 224, 224);
+    cursor: pointer;
+}
+#search-box{
+    height: 2em;
+    width: 12em;
+    font-size: 15px;
+    border: 2px solid green;
+
+}
+
+.header .search-form label{
+    font-size: 20px;
+    padding-right: 1.5rem;
+    color:var(--black);
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .search-form label:hover{
+    color: white;
+}
+
+
+.container{
+    background: scroll;
+    border: 2px solid green;
+    font-size: 20px;
+    padding: 2px 4px;
+    margin: 2px 4px;
+}
+
+
+section{
+    padding:2rem 9%;
+}
+
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(shop.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+    }
+    
+    .home .content{
+        text-align: center;
+        width:60rem;
+    }
+    
+    .home .content h3{
+        color:var(--black);
+        font-size: 3rem;
+    }
+    
+    .home .content h3 span{
+        color:green;
+    }
+    
+    .home .content p{
+        color:rgb(15, 15, 15);
+        font-size: 2.2rem;
+        padding:1rem 0;
+        line-height: 1.8;
+    }
+    .heading{
+        text-align: center;
+        padding:2rem 0;
+        padding-bottom: 3rem;
+        font-size: 3.5rem;
+        color:var(--black);
+    }
+    
+    
+.heading span{
+    background: rgb(111, 240, 25);
+    color:rgb(38, 80, 218);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 1.5rem;
+}
+
+.features .box-container .box{
+    padding:3rem 2rem;
+    background: rgb(223, 250, 228);
+    outline:auto;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover{
+    outline: auto;
+    outline-offset: 0rem;
+}
+.features .box-container .box img{
+    margin:1rem 0;
+    height: 12rem;
+}
+.features .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    color:black;
+}
+
+.features .box-container .box p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color:green;
+    padding:1rem 0;
+}
